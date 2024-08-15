@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Padauk Trips</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/s/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    
+    <section class="first-section">
+
+    <header><a href="#" class="logo"><i class="ri-ancient-pavilion-fill"></i>
+    <span>
+        Padauk Trips
+    </span></a>
+
+    <ul class="navbar">
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="Packages (ready to bind)/packages.html">Packages</a></li>
+        <li><a href="review.html">Reviews</a></li>
+        <li><a href="#about" class="active">About Us</a></li>
+        <li><a href="Contact Us/ContactUs.html">Contact Us</a></li>
+        
+    </ul>
+    
+    <div class="main">
+        <a href="#" class="user"><i class="ri-user-fill"></i>Sign In</a>
+        <a href="#">Register</a>
+        <div class="bx bx-menu" id="menu-icon"><i class="ri-menu-fold-line"></i></div>
+    </div>
+</header>
+
+    <div class="text-container">
+        <span class="text first-text">Ready to Explore the Beauty <br>  of</span>
+        <span class="text second-text">Wonderful Land. 
+        </span> 
+    </div>
+
+    <div class="paragraph">
+        <span >
+            <p>Myanmar, often called "The Golden Land," is a Southeast Asian gem. <br>It boasts mesmerizing landscapes,
+                from the ancient Bagan temples <br> to tranquil Inlay Lake.  Burmese , renowned for their 
+                warmth and <br>  diversity, enrich its culture. Despite its hurdles, Myanmar welcomes <br> the world to uncover its treasures
+                and experience its timeless charm.</p>
+        </span>
+        
+        
+    </div>
+    <div class="image">
+        
+    </div>
+
+    <div class="but">
+        <a href="Packages (ready to bind)/packages.html"><button class="btnAnimation">
+            Popular Tours</button></a>
+        
+    </div>
+
+
+
+    <!-- Second Section -->
+
+    <section id="about" class="tour">
+
+        <!-- 
+        <div class="center-text">
+            <h2>Trendy Trips</h2>
+        </div>
+        Second Section -->
+
+        <div class="tour-content">
+
+            <div class="seperate">
+                <div class="image1">
+                    <img src="Kalaw.jpg" alt="" class="tourImg">
+
+                    <div class="content">
+                        <h2>Kalaw</h2>
+                        <p><br>Kalaw, a picturesque town in Myanmar,<br> is known for its cool climate and <br>
+                            stunning trekking trails.</p>
+                    </div>
+
+                    <div class="KalawView"><a href="">
+                        <button class="btnAnimation">View Tour</button>
+                    </a>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="seperate">
+                <div class="image2">
+                    <img src="bg.jpg" alt="" class="tourImg">
+
+                    <div class="content">
+                        <h2>Bagan</h2>
+                        <p><br>Bagan is an ancient city adorned with <br>thousands of majestic temples,<br>
+                            creating a breathtaking <br>landscape.</p>
+                    </div>
+
+                    <div class="InlayView"><a href="">
+                        <button class="btnAnimation">View Tour</button>
+                    </a>
+                </div>
+                </div>
+            </div>
+
+            <div class="seperate">
+                <div class="image3">
+                    <img src="Inlay1.jpg" alt="" class="tourImg">
+
+                    <div class="content">
+                        <h2>Inlay</h2>
+                        <p><br>Inle Lake, nestled in Myanmar's Shan State,<br> is famous for its floating gardens,
+                            and<br> unique leg-rowing fishermen.</p>
+                    </div>
+
+                    <div class="ShanView"><a href="">
+                        <button class="btnAnimation">View Tour</button>
+                    </a>
+                </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    
+</section>
+    <!-- Third Section Culture -->
+    <section>
+            <!--culture section design-->
+    <section class="culture">
+        <div class="culture-img">
+            <img src="updateBagan.jpg" alt="image">
+        </div>
+        <div class="culture-text">
+            <h5>Myanmar culture</h5>
+            <h2>Our culture is very friendly to people</h2>
+            <p>Myanmar's culture is a vibrant tapestry woven from a rich diversity of traditions and
+                 ethnic influences. Festivals bring streets to life with parades and dances, 
+                 while temple bells ring with tranquility. Traditional arts like lacquerware and puppetry thrive,
+                  and the people's warm hospitality is a defining feature. Myanmar seamlessly blends ancient 
+                  and modern, creating a captivating cultural experience for all.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        
+    </section>
+
+    </section>
+
+    <section></section>
+
+    <script>
+        const text = document.querySelector(".second-text");
+
+        const textLoad = () => {
+    
+            setTimeout(() => {
+                text.textContent = "Wonderful Land."
+            }, 0);
+
+            setTimeout(() => {
+                text.textContent = "Golden Land."
+            }, 4000);
+
+            setTimeout(() => {
+                text.textContent = "Myanmar."
+            }, 8000);
+        }
+        textLoad();
+        setInterval(textLoad, 12000)
+    </script>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

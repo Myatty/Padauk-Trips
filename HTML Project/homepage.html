@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="homepage-style.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/s/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    
+    <section>
+
+    <header><a href="#" class="logo"><i class="ri-ancient-pavilion-fill"></i>
+    <span>
+        Padauk Trips
+    </span></a>
+
+    <ul class="navbar">
+        <li><a href="#" class="active">About Us</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+    
+    <div class="main">
+        <a href="#" class="user"><i class="ri-user-fill"></i>Sign In</a>
+        <a href="#">Register</a>
+        <div class="bx bx-menu" id="menu-icon"><i class="ri-menu-fold-line"></i></div>
+    </div>
+</header>
+
+    <div class="text-container">
+        <span class="text first-text">Ready to Explore the Beauty of <br> </span>
+        <span class="text second-text">Wonderful Land.</span> 
+    </div>
+
+    
+
+</section>
+
+    <section></section>
+
+    <section></section>
+
+    <script>
+        const text = document.querySelector(".second-text");
+
+        const textLoad = () => {
+    
+            setTimeout(() => {
+                text.textContent = "Wonderful Land."
+            }, 0);
+
+            setTimeout(() => {
+                text.textContent = "Golden Land."
+            }, 4000);
+
+            setTimeout(() => {
+                text.textContent = "Myanmar."
+            }, 8000);
+        }
+        textLoad();
+        setInterval(textLoad, 12000)
+    </script>
+
+    <script type="text/javascript" src="homepage-script.js"></script>
+</body>
+</html>
